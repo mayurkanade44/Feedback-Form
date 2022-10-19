@@ -73,11 +73,20 @@ const Feedback = () => {
             ref={form}
           >
             <div className="row">
+              {/* <h6 className="text-center">Name of the client </h6>
               <div className="d-flex justify-content-center">
-                <label className="col-sm-2 col-form-label">
-                  <h6>Name Of The Client :-</h6>
-                </label>
-                <div className="col-sm-4">
+                <input
+                  type="text"
+                  className="form-control"
+                  name="name"
+                  value={name}
+                  onChange={handleChange}
+                  style={{ width: 400 }}
+                />
+              </div> */}
+              <div className="d-flex justify-content-center name">
+                <h6 className="col-form-label me-1">Client Name :-</h6>
+                <div>
                   <input
                     type="text"
                     className="form-control"
@@ -310,7 +319,8 @@ const Feedback = () => {
                     equipment &&
                     aspect &&
                     improvement &&
-                    reconsider
+                    reconsider &&
+                    name
                       ? false
                       : true
                   }
