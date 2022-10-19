@@ -5,6 +5,7 @@ import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const initialState = {
+  name: "",
   efficiency: "",
   work: "",
   behavior: "",
@@ -18,6 +19,7 @@ const Feedback = () => {
   const form = useRef();
   const [thanks, setThanks] = useState(false);
   const {
+    name,
     efficiency,
     work,
     behavior,
@@ -61,7 +63,7 @@ const Feedback = () => {
     <div className="container my-2">
       {!thanks ? (
         <>
-          <h2 className="text-center text-info mb-3">
+          <h2 className="text-center text-info mb-4">
             <u>Feedback Form</u>
           </h2>
           <form
@@ -71,6 +73,21 @@ const Feedback = () => {
             ref={form}
           >
             <div className="row">
+              <div className="d-flex justify-content-center">
+                <label className="col-sm-2 col-form-label">
+                  <h6>Name Of The Client :-</h6>
+                </label>
+                <div className="col-sm-4">
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="name"
+                    value={name}
+                    onChange={handleChange}
+                  />
+                </div>
+              </div>
+              <hr className="my-3" />
               <h6 className="text-center">Rate work efficiency?</h6>
               <div className="col-4 d-flex justify-content-center">
                 <input
@@ -249,7 +266,7 @@ const Feedback = () => {
               </div>
               <hr className="my-3" />
               <h6 className="text-center">
-                Would you reconsider our services to an associate?
+                Would you recommend our services to an associate?
               </h6>
               <div className="col-6 d-flex justify-content-center">
                 <input
