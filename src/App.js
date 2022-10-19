@@ -75,7 +75,8 @@ const Feedback = () => {
               <div className="col-4 d-flex justify-content-center">
                 <input
                   className="form-check-input mt-2"
-                  type="checkbox"
+                  type="radio
+                  "
                   name="efficiency"
                   value="Good"
                   onChange={handleChange}
@@ -90,7 +91,8 @@ const Feedback = () => {
               <div className="col-4 d-flex justify-content-center">
                 <input
                   className="form-check-input mt-2"
-                  type="checkbox"
+                  type="radio
+                  "
                   name="efficiency"
                   value="Average"
                   onChange={handleChange}
@@ -105,7 +107,8 @@ const Feedback = () => {
               <div className="col-4 d-flex justify-content-center">
                 <input
                   className="form-check-input mt-2"
-                  type="checkbox"
+                  type="radio
+                  "
                   name="efficiency"
                   value="Ugly"
                   onChange={handleChange}
@@ -122,7 +125,7 @@ const Feedback = () => {
               <div className="col-6 d-flex justify-content-center">
                 <input
                   className="form-check-input"
-                  type="checkbox"
+                  type="radio"
                   name="work"
                   value="Yes"
                   onChange={handleChange}
@@ -137,7 +140,7 @@ const Feedback = () => {
               <div className="col-6 d-flex justify-content-center">
                 <input
                   className="form-check-input"
-                  type="checkbox"
+                  type="radio"
                   name="work"
                   value="No"
                   onChange={handleChange}
@@ -156,7 +159,8 @@ const Feedback = () => {
               <div className="col-6 d-flex justify-content-center">
                 <input
                   className="form-check-input"
-                  type="checkbox"
+                  type="radio
+                  "
                   name="behavior"
                   value="Yes"
                   onChange={handleChange}
@@ -171,7 +175,8 @@ const Feedback = () => {
               <div className="col-6 d-flex justify-content-center">
                 <input
                   className="form-check-input"
-                  type="checkbox"
+                  type="radio
+                  "
                   name="behavior"
                   value="No"
                   onChange={handleChange}
@@ -190,7 +195,8 @@ const Feedback = () => {
               <div className="col-6 d-flex justify-content-center">
                 <input
                   className="form-check-input"
-                  type="checkbox"
+                  type="radio
+                  "
                   name="equipment"
                   value="Yes"
                   onChange={handleChange}
@@ -205,7 +211,8 @@ const Feedback = () => {
               <div className="col-6 d-flex justify-content-center">
                 <input
                   className="form-check-input"
-                  type="checkbox"
+                  type="radio
+                  "
                   name="equipment"
                   value="No"
                   onChange={handleChange}
@@ -254,7 +261,8 @@ const Feedback = () => {
               <div className="col-6 d-flex justify-content-center">
                 <input
                   className="form-check-input"
-                  type="checkbox"
+                  type="radio
+                  "
                   name="reconsider"
                   value="Yes"
                   onChange={handleChange}
@@ -269,7 +277,8 @@ const Feedback = () => {
               <div className="col-6 d-flex justify-content-center">
                 <input
                   className="form-check-input"
-                  type="checkbox"
+                  type="radio
+                  "
                   name="reconsider"
                   value="No"
                   onChange={handleChange}
